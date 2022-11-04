@@ -6,17 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="icon" type="image/png" href="image/twitter-icon.png">
+    <link rel="icon" type="image/png" href="images/twitter-icon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style>
-        .btn.btn-primary {
-            border-radius: 20px;
-            width: 100%;
-        }
-
         .container {
             /* margin-top: 10px; */
         }
@@ -38,6 +33,16 @@
             margin-top: 16px;
             position: relative;
         }
+
+        textarea {
+            resize: none;
+        }
+
+        .line-image {
+            border-left: 1px solid lightgray;
+            height: 80px;
+            margin: 4px 0 4px 50%;
+        }
     </style>
 </head>
 
@@ -47,7 +52,7 @@
             <div class="col-3 pt-2 d-flex flex-column flex-lg-row">
                 <ul class="nav flex-column text-start">
                     <li>
-                        <img src="image/twitter-icon.png" width="30px">
+                        <img src="images/twitter-icon.png" width="30px">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-dark bi bi-house-heart-fill " aria-current="page" href="#">
@@ -76,15 +81,53 @@
                         <a class="nav-link text-dark bi bi-three-dots" href="#"> More</a>
                     </li>
                     <li>
-                        <button type="button" class="btn btn-primary">Tweet</button>
+                        <button type="button" class="btn btn-primary w-100 rounded-pill"> Tweet </button>
                     </li>
                 </ul>
             </div>
-            <div class="col-6 timeline">
-                <h5>Home</h5>
-                <div>
-                    <p>What's happening?</p>
-                    <button type="button" class=" btn-primary">Tweet</button>
+            <div class="col-6 timeline p-0">
+                <h5 class="border-bottom p-2"><i class="bi bi-stars float-end"></i>Home</h5>
+                <div class="container border-bottom">
+                    <div class="row">
+                        <div class="col-1 p-0 ps-2">
+                            <img class="rounded-circle w-100" src="images/SanazLink.jpeg">
+                        </div>
+                        <div class="col-11">
+                            <textarea class="w-100 m border-0" placeholder="What's happening?"></textarea>
+                            <div class="d-flex align-content-center flex-wrap gap-1 pb-1 text-primary">
+                                <i class="bi bi-image"></i>
+                                <i class="bi bi-filetype-gif"></i>
+                                <i class="bi bi-bar-chart-line"></i>
+                                <i class="bi bi-emoji-smile"></i>
+                                <i class="bi bi-calendar4-event"></i>
+                                <button type="button"
+                                    class=" btn btn-primary disabled rounded-pill ms-auto">Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container border-bottom pt-1 pb-1">
+                    <div class="row">
+                        <div class="col-1 p-0 ps-2">
+                            <img class="rounded-circle w-100" src="images/ElonMusk.jpeg">
+                            <div class="line-image"></div>
+                            <img class="rounded-circle w-75 ms-1" src="images/ElonMusk.jpeg">
+                        </div>
+                        <div class="col-11">
+                            <p class=""><span class="fw-bold">Elon musk</span><span> @elonmusk 29 . Oct</span><i
+                                    class="bi bi-three-dots float-end"></i></p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,</p>
+                            <div class="d-flex gap-4 ">
+                                <i class="bi bi-chat">52.3k</i>
+                                <i class="bi bi-arrow-repeat">70.4k</i>
+                                <i class="bi bi-heart">577k</i>
+                                <i class="bi bi-upload"></i>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Show this thread</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-3 pt-2">
