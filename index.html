@@ -163,11 +163,11 @@
             </div>
         </div>
     </main>
-    <div class="col-3 pt-2 p-3">
+    <aside class="d-none d-sm-block col-3 pt-2 p-3">
         <input type="search" class="col-9 search" placeholder="🔍Search Twitter" />
-        <div class="bg-light box px-4 pt-1 pb-3 rounded">
+        <section class="bg-light box px-4 pt-1 pb-3 rounded">
             <div class="bg-light box d-flex justify-content-between">
-                <h5>Trends for you</h5>
+                <h5 class="fw-bold">Trends for you</h5>
                 <i class="bi bi-gear"></i>
             </div>
             <div class="d-column-flex">
@@ -194,60 +194,77 @@
             <div>
                 <a class="fs-6 text-decoration-none opacity-75" href="#">Show more</a>
             </div>
-        </div>
-        <div class="bg-light box px-4 pt-1 pb-3 rounded container">
+        </section>
+        <section class="bg-light box px-4 pt-1 pb-3 rounded container">
 
             <div class="bg-light box d-flex justify-content-between row">
-                <h5>Who to follow</h5>
+                <h5 class="fw-bold">Who to follow</h5>
             </div>
-            <div class=" bg-light row">
+           
+            <div class=" bg-light row py-1">
 
-                <div class="col-3">
-                    <img class=" rounded-circle w-75 p-2" src="images/ElonMusk.jpeg" />
+                <div class="col-6 col-md-3">
+                    <img class=" rounded-circle w-100 p-xl-2" src="images/ElonMusk.jpeg" />
                 </div>
-                <div class="col-6 pt-1">
+                <div class="d-none d-md-block col-3 col-xl-6 pt-1">
                     <p class="mb-0 fw-bold">Elon Musk </p>
                     <div class="d-flex text-nowrap ">
                         <p class="w-50 fw-light text-truncate">@elonmusk</p>
-                        <p class="w-50 fw-light text-uppercase ">Follows you</p>
+                        <p class="w-50 fw-light text-uppercase d-none d-xl-inline-block ">Follows you</p>
                     </div>
 
                 </div>
-                <div class="col-3 pt-4">
+                <div class="col-6 col-md-3 pt-4">
                     <button type="button" class=" bg-dark rounded-5 border-0  text-white fw-semibold">
                         Follow
                     </button>
                 </div>
 
-            </div>
-            <div class=" bg-light row">
+                
 
-                <div class="col-3">
-                    <img class=" rounded-circle w-75 p-2" src="images/ElonMusk.jpeg" />
+            </div>
+
+            <div class=" bg-light row py-1">
+
+                <div class="col-6 col-md-3">
+                    <img class=" rounded-circle w-100 p-xl-2" src="images/ElonMusk.jpeg" />
                 </div>
-                <div class="col-6 pt-1">
+                <div class="d-none d-md-block col-3 col-xl-6 pt-1">
                     <p class="mb-0 fw-bold">Elon Musk </p>
                     <div class="d-flex text-nowrap ">
                         <p class="w-50 fw-light text-truncate">@elonmusk</p>
-                        <p class="w-50 fw-light text-uppercase ">Follows you</p>
+                        <p class="w-50 fw-light text-uppercase d-none d-xl-inline-block ">Follows you</p>
                     </div>
 
                 </div>
-                <div class="col-3 pt-4">
+                <div class="col-6 col-md-3 pt-4">
                     <button type="button" class=" bg-dark rounded-5 border-0  text-white fw-semibold">
                         Follow
                     </button>
                 </div>
 
+                
+
             </div>
 
 
-            <div>
+            <div class="pt-2">
                 <a class="fs-6 text-decoration-none opacity-75" href="#">Show more</a>
             </div>
 
+    </section>
+    <footer >
+        <nav class="fw-light m-4 pe-5">
+        <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">Terms of Service</a>
+       <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">Privacy Policy</a>
+       <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">Cookie Policy</a>
+       <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">Ads info</a>
+       <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">More...</a>
+       <a class="text-decoration-none  text-dark opacity-75 p-2 text-nowrap" href="#">© 2021 Twitter, Inc.</a>
+    </nav>
 
-        </div>
+    </footer>
+        </aside>
 
 </body>
 
