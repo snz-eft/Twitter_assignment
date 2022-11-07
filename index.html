@@ -40,8 +40,15 @@
 
         .line-image {
             border-left: 1px solid lightgray;
-
             margin: 4px 0 4px 50%;
+        }
+
+        .hover-name {
+            text-decoration: none;
+        }
+
+        .hover-name:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -51,56 +58,70 @@
     <header class="d-flex justify-content-end col-3 w-25 mt-0 ms-0 vh-100">
         <nav class="navbar d-flex flex-column p-3 position-fixed mt-0">
             <ul class="nav flex-column text-start">
-                <li>
-                    <img src="images/twitter-icon.png" width="30px" />
+                <li class="ms-3">
+                    <img src="images/twitter-icon.png" width="20px" />
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-dark bi bi-house-heart-fill" aria-current="page" href="#">
-                        <span class="ms-1 d-none d-sm-inline"> Home</span>
+                        <span class="ms-1 d-none d-md-inline"> Home</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-hash" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Explore</span>
+                        <span class="ms-1 d-none d-md-inline">Explore</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-bell" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Notifications</span></a>
+                        <span class="ms-1 d-none d-md-inline">Notifications</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-envelope" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Messages</span>
+                        <span class="ms-1 d-none d-md-inline">Messages</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-bookmark" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Bookmarks</span>
+                        <span class="ms-1 d-none d-md-inline">Bookmarks</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-card-list" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Lists</span>
+                        <span class="ms-1 d-none d-md-inline">Lists</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-person" href="#">
-                        <span class="ms-1 d-none d-sm-inline">Profile</span>
+                        <span class="ms-1 d-none d-md-inline">Profile</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark bi bi-three-dots" href="#">
-                        <span class="ms-1 d-none d-sm-inline">More</span></a>
+                        <span class="ms-1 d-none d-md-inline">More</span></a>
                 </li>
                 <li>
                     <button type="button"
                         class="w-100 py-2 bg-primary bg-opacity-75 rounded-5 border-0 text-white fw-bold">
-                        Tweet
+                        <span class="d-none d-md-block">Tweet</span>
+                        <span class="d-block d-md-none bi bi-send"></span>
                     </button>
                 </li>
             </ul>
         </nav>
+        <div class="d-flex align-items-end ">
+            <div class="row mb-4 d-flex  justify-content-end">
+                <div class="col-2 d-flex flex-column p-1">
+                    <img class="rounded-circle w-100" src="images/SanazLink.jpeg" />
+                </div>
+                <div class="col-4 pt-3">
+                    <a class=" nav-link text-dark d-flex align-item-center" href="#">
+                        <span class="ms-1 d-none d-md-inline">Snz-Eft</span></a>
+                </div>
+                <div class="col-2 pt-3 d-none d-md-inline"> <i class="bi bi-three-dots float-end"></i></div>
+            </div>
+
+        </div>
     </header>
     <main class="col-6 timeline p-0 flex-wrap">
         <h5 class="border-bottom sticky-top p-2 bg-light bg-opacity-75">
@@ -112,8 +133,6 @@
                 <div class="col-1 p-0 ps-2">
 
                     <img class="img-fluid border-0 rounded-circle w-100" src="images/SanazLink.jpeg" />
-
-
                 </div>
                 <div class="col-11">
                     <textarea class="w-100 m border-0 py-2" placeholder="What's happening?"></textarea>
@@ -125,7 +144,8 @@
                         <i class="bi bi-calendar4-event"></i>
                         <button type="button"
                             class=" mb-1 py- px-2 bg-primary bg-opacity-50 rounded-5 border-0 fs-6 text-white fw-bold ms-auto">
-                            Tweet
+                            <span class="d-none d-md-block">Tweet</span>
+                            <span class="d-block d-md-none bi bi-send"></span>
                         </button>
                     </div>
                 </div>
@@ -141,8 +161,9 @@
                 </div>
                 <div class="col-11 pt-1">
                     <p class="">
-                        <span class="fw-bold">Elon musk</span><span> @elonmusk 29 . Oct</span><i
-                            class="bi bi-three-dots float-end"></i>
+                        <a class="fw-bold text-dark hover-name" href="#">Elon musk</a><span>
+                            @elonmusk 29 .
+                            Oct</span><i class="bi bi-three-dots float-end"></i>
                     </p>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
