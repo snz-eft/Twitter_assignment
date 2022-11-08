@@ -21,10 +21,12 @@
   </head>
 
   <body class="row p-0 m-0 min-vw-100">
-    <header class="sticky-top w-25 mt-0 ms-0 vh-100 d-none d-sm-flex">
-      <nav class="navbar d-flex flex-column to flex h-100 p-3 mt-0">
-        <div class="d-flex flex-column h-100">
-          <ul class="nav flex-column text-start fs-3 align-self-end flex-fill">
+    <header class="sticky-top w-25 mt-0 ms-0 vh-100 d-none d-sm-flex p-0">
+      <nav
+        class="navbar d-flex flex-column to flex w-100 h-100 px-3 pt-0 pb-3 mt-0 justify-content-end"
+      >
+        <div class="d-flex flex-column w-75 ps-5 h-100 align-self-end pt-1">
+          <ul class="nav flex-column w-100 text-start fs-3 align-self-end">
             <li class="ms-3">
               <img src="images/twitter-icon.png" width="30px" />
             </li>
@@ -72,35 +74,43 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark bi bi-three-dots" href="#">
-                <span class="ms-3 d-none d-xxl-inline fs-5">More</span></a
-              >
+                <span class="ms-3 d-none d-xxl-inline fs-5"> More </span>
+              </a>
             </li>
-            <li>
-              <button
-                type="button"
-                class="w-100 py-2 bg-primary bg-opacity-75 rounded-5 border-0 text-white fw-bold"
-              >
-                <span class="d-none d-xxl-block">Tweet</span>
-                <span
-                  class="d-block d-xxl-none rounded-circle bi bi-send"
-                ></span>
-              </button>
-            </li>
+           
           </ul>
+          <div class="d-xxl-flex w-100 mt-4">
+            <button
+              type="button"
+              class="py-2 ms-2 bg-primary bg-opacity-75 rounded-5 border-0 text-white fw-bold"
+            >
+              <span class="px-5  d-none d-xxl-block fs-5 py-1">Tweet</span>
+              <div>
+                <span
+                  class="px-2  d-inline d-xxl-none rounded-circle bi bi-send"
+                ></span>
+              </div>
+            </button>
 
-          <div class="row mb-4 d-flex align-self-end justify-content-end">
-            <div class="col-2 d-flex flex-row p-1 ">
-              <img class="rounded-circle w-100 " src="images/SanazLink.jpeg " />
+          </div>
+          <div class="flex-fill"></div>
+          <div class="d-flex flex-row w-100">
+            <div class="flex-column p-1">
+              <img
+                class="rounded-circle"
+                src="images/SanazLink.jpeg "
+                width="45px"
+                height="45px"
+              />
             </div>
-            <div class="col-3 align-self-center">
+            <div class="flex-column flex-fill align-self-center">
               <a class="nav-link text-dark" href="#">
                 <span class="ms-1 d-none d-xxl-flex fw-bold">Snz-Eft</span></a
               >
-              
-                <div class="ms-1 d-none d-xxl-flex fw-light">@SnzEft</div>
-              
+
+              <div class="ms-1 d-none d-xxl-flex fw-light opacity-75 ">@SnzEft</div>
             </div>
-            <div class="col-2 align-self-center d-none d-xxl-inline p-0">
+            <div class="flex-column align-self-center d-none d-xxl-inline p-0">
               <i class="bi bi-three-dots float-end"></i>
             </div>
           </div>
@@ -534,6 +544,11 @@
           </div>
         </div>
       </section>
+
+      <nav>
+        
+      </nav>
+
     </main>
     <aside
       class="d-none d-xl-flex flex-column h-100 col-3 pt-0 m-0 p-0 pe-3 pe-xl-3 sticky-bottom"
@@ -555,42 +570,42 @@
           </div>
           <div class="d-column-flex">
             <div class="bg-light mt-3 d-flex justify-content-between">
-              <p class="mb-0 fw-lighter text-dark opacity-75">
+              <p class="mb-0 text-dark opacity-50">
                 Trending in Sweden
               </p>
               <i class="bi bi-three-dots"></i>
             </div>
             <p class="fw-bold">
               Bulletin
-              <span class="d-block fw-light text-dark opacity-75"
+              <span class="d-block fw-normal text-dark opacity-50"
                 >7.978 Tweets</span
               >
             </p>
           </div>
           <div class="d-column-flex">
             <div class="bg-light mt-3 d-flex justify-content-between">
-              <p class="mb-0 fw-lighter text-dark opacity-75">
+              <p class="mb-0text-dark opacity-50">
                 Trending in Sweden
               </p>
               <i class="bi bi-three-dots"></i>
             </div>
             <p class="fw-bold">
               Arlanda
-              <span class="d-block fw-light text-dark opacity-75"
+              <span class="d-block fw-normal text-dark opacity-50"
                 >7.608 Tweets</span
               >
             </p>
           </div>
           <div class="d-column-flex">
             <div class="bg-light mt-3 d-flex justify-content-between">
-              <p class="mb-0 fw-lighter text-dark opacity-75">
+              <p class="mb-0 text-dark opacity-50">
                 Trending in Sweden
               </p>
               <i class="bi bi-three-dots"></i>
             </div>
             <p class="fw-bold">
               Volkswagen
-              <span class="d-block fw-light text-dark opacity-75"
+              <span class="d-block fw-normal text-dark opacity-50"
                 >5.947 Tweets</span
               >
             </p>
