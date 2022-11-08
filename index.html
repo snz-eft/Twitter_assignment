@@ -17,7 +17,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <style></style>
+<style>
+
+a:hover {
+  cursor: pointer;
+}
+
+</style>
+
   </head>
 
   <body class="row p-0 m-0 min-vw-100">
@@ -25,14 +32,14 @@
       <nav
         class="navbar d-flex flex-column to flex w-100 h-100 px-3 pt-0 pb-3 mt-0 justify-content-end"
       >
-        <div class="d-flex flex-column w-75 ps-5 h-100 align-self-end pt-1">
-          <ul class="nav flex-column w-100 text-start fs-3 align-self-end">
-            <li class="ms-3">
+        <div class=" d-flex flex-column w-75  h-100 align-self-end pt-1">
+          <ul class="ps-3 nav flex-column w-100 text-start fs-3 align-self-end">
+            <li>
               <img src="images/twitter-icon.png" width="30px" />
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a
-                class="nav-link active text-dark bi bi-house-heart-fill"
+                class="nav-link px-0 active text-dark bi bi-house-heart-fill"
                 aria-current="page"
                 href="#"
               >
@@ -40,40 +47,40 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-hash" href="#">
+              <a class="nav-link px-0 text-dark bi bi-hash" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5">Explore</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-bell" href="#">
+              <a class="nav-link px-0 text-dark bi bi-bell" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5"
                   >Notifications</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-envelope" href="#">
+              <a class="nav-link px-0 text-dark bi bi-envelope" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5">Messages</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-bookmark" href="#">
+              <a class="nav-link px-0 text-dark bi bi-bookmark" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5">Bookmarks</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-card-list" href="#">
+              <a class="nav-link px-0 text-dark bi bi-card-list" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5">Lists</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-person" href="#">
+              <a class="nav-link px-0 text-dark bi bi-person" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5">Profile</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark bi bi-three-dots" href="#">
+              <a class="nav-link px-0 text-dark bi bi-three-dots" href="#">
                 <span class="ms-3 d-none d-xxl-inline fs-5"> More </span>
               </a>
             </li>
@@ -83,7 +90,7 @@
               type="button"
               class="py-2 ms-2 bg-primary bg-opacity-75 rounded-5 border-0 text-white fw-bold"
             >
-              <span class="px-5 d-none d-xxl-block fs-5 py-1">Tweet</span>
+              <span class="px-5 d-none d-xxl-block fs-6 py-1">Tweet</span>
               <div>
                 <span
                   class="px-2 d-inline d-xxl-none rounded-circle bi bi-send"
@@ -163,13 +170,15 @@
               <textarea
                 class="border-0 w-100 fs-5 text-dark pt-2 pb-0"
                 placeholder="What's happening?"
+                maxlength="280"
+                rows="auto"
               ></textarea>
             </div>
             <div class="d-flex justify-content-center ps-1 mb-1">
               <div
                 class="d-flex flex-fill align-self-center flex-wrap gap-3 text-primary opacity-75"
               >
-                <div class="bi bi-image"></div>
+                <div class=" bi bi-image"></div>
                 <div class="bi bi-filetype-gif"></div>
                 <div class="bi bi-list-stars"></div>
                 <div class="bi bi-emoji-smile"></div>
@@ -187,13 +196,15 @@
           </div>
         </div>
       </section>
-      <div
+      <a scr="index.html"
         class="d-flex p-3 my-1 border-2 border-light border-bottom border-top sm justify-content-center text-primary opacity-75"
       >
-        Show 102 Tweets
-      </div>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+     Show 102 Tweets
+        
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
+        src="index.html"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -250,9 +261,9 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -307,9 +318,9 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -366,9 +377,9 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -425,9 +436,9 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -484,9 +495,9 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
-      <section
-        class="py-2 d-flex flex-column border-bottom border-2 border-light"
+      </a>
+      <a
+        class="py-2 d-flex flex-column border-bottom border-2 border-light text-decoration-none"
       >
         <div class="d-flex px-2 m-0 w-100">
           <div class="d-flex flex-column ms-1">
@@ -543,7 +554,7 @@
             <div class="text-primary opacity-75 my-1">Show this thread</div>
           </div>
         </div>
-      </section>
+      </a>
 
       <nav class="d-flex flex-column d-sm-none fixed-bottom">
         <div
@@ -559,18 +570,18 @@
           class="d-flex flex-row flex-fill py-2 m-0 bg-white border-top border-2 border-light"
         >
           <div class="d-flex m-0 w-100 justify-content-around fs-3">
-            <div class=" ">
+            <a class="text-decoration-none text-dark ">
               <span class="bi bi-house-heart-fill"></span>
-            </div>
-            <div class="">
+            </a>
+            <a class="text-decoration-none text-dark">
               <span class="bi bi-search"></span>
-            </div>
-            <div class="">
+            </a>
+            <a class="text-decoration-none text-dark">
               <span class="bi bi-bell"></span>
-            </div>
-            <div class="">
+            </a>
+            <a class="text-decoration-none text-dark">
               <div class="m-0 bi bi-envelope"></div>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
@@ -593,7 +604,7 @@
             <h5 class="fw-bold">Trends for you</h5>
             <i class="bi bi-gear"></i>
           </div>
-          <div class="d-column-flex">
+          <a class="d-column-flex text-decoration-none text-dark">
             <div class="bg-light mt-3 d-flex justify-content-between">
               <p class="mb-0 text-dark opacity-50">Trending in Sweden</p>
               <i class="bi bi-three-dots"></i>
@@ -604,8 +615,8 @@
                 >7.978 Tweets</span
               >
             </p>
-          </div>
-          <div class="d-column-flex">
+          </a>
+          <a class="d-column-flex text-decoration-none text-dark">
             <div class="bg-light mt-3 d-flex justify-content-between">
               <p class="mb-0text-dark opacity-50">Trending in Sweden</p>
               <i class="bi bi-three-dots"></i>
@@ -616,8 +627,8 @@
                 >7.608 Tweets</span
               >
             </p>
-          </div>
-          <div class="d-column-flex">
+          </a>
+          <a class="d-column-flex text-decoration-none text-dark">
             <div class="bg-light mt-3 d-flex justify-content-between">
               <p class="mb-0 text-dark opacity-50">Trending in Sweden</p>
               <i class="bi bi-three-dots"></i>
@@ -628,7 +639,7 @@
                 >5.947 Tweets</span
               >
             </p>
-          </div>
+          </a>
           <div>
             <a class="fs-6 text-decoration-none opacity-75" href="#"
               >Show more</a
@@ -640,7 +651,7 @@
             <h5 class="fw-bold">Who to follow</h5>
           </div>
 
-          <div class="d-flex bg-light py-1 mb-2">
+          <a class="d-flex bg-light py-1 mb-2 text-decoration-none text-dark">
             <div class=" ">
               <img
                 class="rounded-circle p-0"
@@ -665,9 +676,9 @@
                 Follow
               </button>
             </div>
-          </div>
+          </a>
 
-          <div class="d-flex bg-light py-1 mb-2">
+          <a class="d-flex bg-light py-1 mb-2 text-decoration-none text-dark">
             <div class=" ">
               <img
                 class="rounded-circle p-0"
@@ -692,7 +703,7 @@
                 Follow
               </button>
             </div>
-          </div>
+          </a>
 
           <div class="pt-2">
             <a class="fs-6 text-decoration-none opacity-75" href="#"
